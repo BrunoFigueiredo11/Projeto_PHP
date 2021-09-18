@@ -8,4 +8,6 @@ Servidor WAMP -> a pasta Projeto_php deverá ser inserida na pasta www do wamp.
 
 após inserir e inicializar o servidor, basta digitar na URL do Navegador 'http://localhost/Projeto_php/pages/index.php'
 
-O projeto utiliza para os dados uma API, podendo assim faltar algumas informaçoes por conta da mesma, caso isso ocorre, o projeto disponibiliza de uma barra de pesquisa para pesquisar outros filmes, e no final da pagina um campo para navegação.
+O projeto utiliza para os dados uma API, podendo assim faltar algumas informaçoes por conta da mesma, caso isso ocorra, o projeto disponibiliza de uma barra de pesquisa para pesquisar outros filmes, e no final da pagina um campo para navegação.
+
+obs: alguns filmes dos vingadores contem todas as informações.
