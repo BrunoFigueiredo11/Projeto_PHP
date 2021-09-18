@@ -1,7 +1,7 @@
 # Projeto_PHP
 #Instruções de execução
-
-O projeto consiste em uma pasta que deverá ser colocada no servidor apache.
+após descompactar o zip, a pasta(Projeto_php) do projeto estará dentro da pasta Projeto_PHP-Develop.
+O projeto consiste em uma pasta(Projeto_php) que deverá ser colocada no servidor apache.
 exemplos:
 Servidor XAMPP -> a pasta Projeto_php deverá ser inserida na pasta htdocs do xampp.
 Servidor WAMP -> a pasta Projeto_php deverá ser inserida na pasta www do wamp.
