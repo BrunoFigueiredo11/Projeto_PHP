@@ -68,7 +68,7 @@ class API
         echo "<div class='content'>";
         echo "<h2>" . $dados->title . "</h2> ";
         echo "<p><h1>Votação Média: " . $dados->vote_average . " / 10</h1></p> ";
-        echo "<h1>Duração: " . API::time('0', $dados->runtime) . "</h1>";
+        echo "<h1>Duração: " . API::time($dados->runtime) . "</h1>";
         echo "<p>Data de lançamento: " . $dados->release_date . ".</p>";
         echo "<p>Genero: ";
         foreach ($dados->genres as $da) {
@@ -100,24 +100,10 @@ class API
         }
     }
 
-    // funcao recursiva que calcula a duração do filme
-    public static function time($cont, $time)
+   public static function time($time)
     {
-        if ($time >= 60) {
-            $cont++;
-            $timeResult = $time - 60;
-            if ($timeResult >= 60) {
-                $time = API::time($cont, $timeResult);
-                return $time;
-            } else {
-                if ($timeResult > 9) {
-                    return ($cont . 'h ' . $timeResult . ' m');
-                } else {
-                    return ($cont . 'h 0' . $timeResult . ' m');
-                }
-            }
-        } else {
-            return $time;
-        }
+        $hora = floor($time/60);
+        $minuto = ($time%60);
+        return $hora.'h '.$minuto.' m';
     }
 }
